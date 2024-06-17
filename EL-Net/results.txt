@@ -1,0 +1,38 @@
+pruning... iter:104 ori model flops:12.415G => 8.210G(66.13%) params:6.474M => 2.016M(31.15%) map@50:0.397 => 0.003(-0.394) map@50:95:0.213 => 0.001(-0.212) Speed Up:1.51
+pruning done...
+model flops:12.415G => 8.210G(66.13%) Speed Up:1.51
+model params:6.474M => 2.016M(31.15%)
+model map@50:0.397 => 0.003(-0.394)
+model map@50:95:0.213 => 0.001(-0.212)
+Fusing layers...
+IDetect.fuse
+Model Summary: 393 layers, 2012073 parameters, 0 gradients, 7.8 GFLOPS
+Scaled weight_decay = 0.000546875
+Optimizer groups: 113 .bias, 130 conv.weight, 114 other
+Image sizes 640 train, 640 test
+Using 8 dataloader workers
+Logging results to runs\train\exp187
+Starting training for 150 epochs...
+
+
+
+
+
+    Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   149/149     4.15G   0.07673   0.05669   0.02286    0.1563       426       640: 100%|██████████| 444/444 [01:11<00:00,  6.17it/s]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 56/56 [00:31<00:00,  1.75it/s]
+                 all        1553       82049       0.525       0.409       0.403       0.218
+          pedestrian        1553       19519       0.552       0.431       0.434       0.173
+              people        1553        6598       0.468       0.282       0.268      0.0859
+             bicycle        1553        2483       0.393       0.165       0.148      0.0501
+                 car        1553       33917       0.654       0.781       0.767       0.474
+                 van        1553        5811       0.538       0.481       0.481       0.317
+               truck        1553        3002       0.582       0.454       0.461       0.271
+            tricycle        1553        1280       0.482       0.213       0.215       0.106
+     awning-tricycle        1553         687       0.408       0.246        0.22       0.123
+                 bus        1553        1647       0.625       0.653       0.644       0.424
+               motor        1553        7105       0.553       0.388        0.39       0.151
+150 epochs completed in 4.175 hours.
+
+
+进程已结束,退出代码0

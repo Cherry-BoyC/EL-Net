@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<annotation>
+		<folder>driving_annotation_dataset</folder>
+		<filename>0000078_05939_d_0000016.jpg</filename>
+		<size>
+			<width>1360</width>
+			<height>765</height>
+			<depth>3</depth>
+		</size>
+		<object>
+			<name>truck</name>
+			<pose>Unspecified</pose>
+			<truncated>0</truncated>
+			<difficult>0</difficult>
+			<bndbox>
+				<xmin>292</xmin>
+				<ymin>390</ymin>
+				<xmax>839</xmax>
+				<ymax>642</ymax>
+			</bndbox>
+		</object>
+	</annotation>

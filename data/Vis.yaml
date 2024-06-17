@@ -1,0 +1,18 @@
+val: G:/EL-Net/VOC-VisDrone/val.txt
+train: G:/EL-Net/VOC-VisDrone/train.txt
+test: G:/EL-Net/VOC-VisDrone/test.txt
+names:
+- pedestrian
+- people
+- bicycle
+- car
+- van
+- truck
+- tricycle
+- awning-tricycle
+- bus
+- motor
+
+
+
+nc: 10
